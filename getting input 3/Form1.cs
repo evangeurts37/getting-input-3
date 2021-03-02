@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace getting_input_3
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string name = txtInput.Text;
+            lblMessage.Text = "Greetings " + name;
         }
     }
 }
