@@ -12,6 +12,7 @@ namespace getting_input_3
 {
     public partial class MainForm : Form
     {
+        string name;
         public MainForm()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace getting_input_3
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string name = txtInput.Text;
+            name = txtInput.Text;
             lblMessage.Text = "Greetings " + name;
         }
     }
